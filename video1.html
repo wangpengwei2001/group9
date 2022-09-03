@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>网游诈骗</title>
+		<style>			
+			body{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background: url("res/testscene5.png") center no-repeat;
+				background-size: 100%;
+				background-attachment: fixed;			
+			}
+			
+					
+						#main{
+							width:700px;
+							margin:0 auto;
+							text-align: center;
+						}
+						
+						.title{
+								  width: 40%;
+								  position: absolute;
+								  left: 30%;
+								  top: 5%;
+						}
+						a:hover img{
+								  opacity: 0.8;
+						}
+						
+						.button{
+								  width: 8%;
+								  position: absolute;
+								  left: 90%;
+								  top: 91%;
+						}
+						a:hover img{
+								  opacity: 0.8;
+						}
+						
+						.buttonvideo{
+								  width: 6%;
+								  position: absolute;
+								  left: 47%;
+								  top: 70%;
+						}
+						a:hover img{
+								  opacity: 0.8;
+						}
+						
+		</style>
+		
+<script type="text/javascript">
+      function hello1(){
+          document.getElementById("vo").play();
+      }
+      function hello2(){
+          document.getElementById("vo").pause();
+      }
+      function hello3(){
+          document.getElementById("vo").currentTime = 78;
+      }
+      function hello4(){
+          document.getElementById("vo").muted = !document.getElementById("vo").muted;
+      }
+    </script>
+	
+	</head>
+	
+	
+<body>
+  	<div id="main">
+    
+    <input type="button" value="播放" onclick="hello1()" />
+    <input type="button" value="暂停" onclick="hello2()" />
+    <input type="button" value="设置进度" onclick="hello3()" />
+    <input type="button" value="静音" onclick="hello4()" />
+    
+    <br/><br/>
+    
+    <video id="vo" width="700" controls src="res/video1.mp4"></video>
+	
+	<div>
+		<a href="home.html"><img class="buttonvideo" src="res/backtomenu.png" /></a>
+		
+	</div>
+	
+    </div>
+  </body>
+
+</html>
+
+
+

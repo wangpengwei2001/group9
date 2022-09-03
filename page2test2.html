@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>小测试</title>
+		<style>
+			
+			body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: url("res/testscene3.png") center no-repeat;
+			background-size: 100%;
+			background-attachment: fixed;			
+		}
+		
+			.main {
+				/*width:1280px;
+				height:720px;*/
+				justify-content: center;
+				display: flex;
+				align-items: center;
+				position: relative;
+			
+				
+				/*margin: 0 auto;*/
+				
+			}
+			
+			.title1{
+					  width: 13%;
+					  position: absolute;
+					  left: 43%;
+					  top: 5%;
+			}
+			a:hover img{
+					  opacity: 0.8;
+			}
+			
+			.button1{
+					  width: 13%;
+					  position: absolute;
+					  left: 44%;
+					  top: 50%;
+			}
+			a:hover img{
+					  opacity: 0.8;
+			}
+		
+		.title {				
+				position:relative; 
+                justify-content: center;
+				cursor: pointer;
+				margin: 0 auto;
+				/*transition:0.5s ease;*/
+			}
+			#a2{
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    width: 800px;
+			    height: 500px;
+			    margin: -250px 0 0 -400px;
+			    background-color: rgba(213, 224, 232, 0.68);
+			    border-radius: 20px;
+			}
+			/*a2阴影*/
+			#a3{
+			    position: absolute;
+			    font-family: "黑体";
+			    font-weight: bold;
+			    color: #030303;
+			    top: 52%;
+			    left: 42%;
+			    width: 650px;
+			    height: 550px;
+			    margin: -250px 0px 0 -250px;
+
+		         }
+		    #a4{
+			position: absolute;
+			top: 150px;
+			left: 50px;
+			font-family: "微软雅黑";
+			color: #030303;
+			font-size: 20px;
+			background-color:#f6dcc6ed;
+			border-radius:5px;
+			height:30px;
+			width:500px;
+			border-style:hidden;
+			text-align:left;
+		     }
+			 
+				 		
+		    #a5{
+			position:absolute;
+			top:200px;
+			left:50px;
+			font-family:"微软雅黑";
+			color: #030303;
+			font-size: 20px;
+			background-color:#f6dcc6ed;
+			border-radius:5px;
+			height:30px;
+			width:500px;
+			border-style:hidden;
+			text-align:left;
+		         }
+		    #a6{
+			position:absolute;
+			top:250px;
+			left:50px;
+			font-family:"微软雅黑";
+			color: #030303;
+			font-size: 20px;
+			background-color:#f6dcc6ed;
+			border-radius:5px;
+			height:30px;
+			width:500px;
+			border-style:hidden;
+			text-align:left;
+		}
+		    #a7{
+			position:absolute;
+			top:150px;
+			left:290px;
+			font-family:"仿宋";
+			color: #030303;
+			font-size: 20px;
+			background-color:#f6dcc6ed;
+			border-radius:5px;
+			height:30px;
+			width:500px;border-style:hidden;
+		}
+		#zqda{
+			
+			font-family: "仿宋";
+			color:#E20407;
+		    font-weight:bold;
+			height: 30px;
+			width: 130px;
+			font-size: 21px;
+			border-radius: 5px;
+			position: absolute;
+			left: 350px;
+			top: 350px;
+			}		 
+		#last img{
+					        width: 13%;
+							position:absolute;
+					        top:405px;
+					        left:25px;
+					  }
+			#last img:hover{
+					transform: scale(1.1);
+					
+					
+						      }
+			
+							  
+		#next img{
+			        width: 13%;
+					position:absolute;
+			        top:405px;
+			        right:25px;
+			  }
+		    #next img:hover{
+			transform: scale(1.1);
+			
+			
+				      }
+		    
+     </style>
+<script type="text/javascript">
+function myFunction()
+{
+	var abc=document.myform.answer.value;
+	if(abc=="answer1")
+	{
+		document.getElementById("zqda").style.display = "block";
+	}
+	else if(abc=="answer2")
+	{
+		document.getElementById("zqda").style.display = "block";
+	}
+	else if(abc=="answer3")
+	{
+		document.getElementById("zqda").style.display = "block";
+	}
+	else if(abc=="answer4")
+	{
+		document.getElementById("zqda").style.display = "block";
+	}
+	else
+	{
+		document.getElementById("zqda").style.display = "block";
+ 
+}
+}
+    	</script>
+	</head>
+	<body>
+		<div>
+			<img class="title1" src="res/littletest.png" /></a>
+			
+		</div>
+		
+		<div id="a2">
+ 
+		<div id="a3">
+		<h2>2&nbsp;.吴某为了减轻家里负担，决定找份兼职，挣点生活费。他通过网上找到一个兼职刷单的广告，每刷一单能返还3-5元佣金，以下哪种做法是正确的？</h2>
+		<form action="" method="post" name="myform" id="myform">
+		<input type="button" value="A.&nbsp刷单不仅违法，还容易被骗，切莫在危险的边缘试探" name="answer" onClick="myFunction()" id="a4" />
+		<input type="button" value="B.&nbsp直接登录网站查看相关消息" name="answer" onClick="myFunction()" id="a5" />
+		<input type="button" value="C.&nbsp加上发广告人的好友询问有没有其他渠道刷单" name="answer" onClick="myFunction()" id="a6" />
+		
+		<div id="zqda" style="display:none">正确答案：A</div>
+		</form>
+
+		<div id="last">
+		<a href="page2test1.html"><img src="res/last.png"></a>
+		</div>
+		
+		<div id="next">
+		<a href="page2test3.html"><img src="res/next.png"></a>
+		</div>
+		
+    </div>
+	</body>
+</html>
